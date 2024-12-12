@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+
+*{
+    transition: all 0.5s ease-in-out;
+    margin: 0;
+    padding: 0;
+    color: pink;
+}
+
+.bite{
+    text-decoration: underline;
+    margin: 30px;
+    font-size: 20px;
+}
+
+
+header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: #808080b9;
+    box-shadow: 0 0 5px;
+    padding: 20px;
+    font-family: Arial;
+    justify-content: space-between;
+}
+
+.dark-mode{
+    cursor: crosshair;
+    width: 50px;
+    height: 50px;
+    border-width: 0.4px;
+    border-style: solid;
+    background-color: transparent;
+}
+
+.placed{
+    text-align: center;
+}
+
+.body{
+    background-color: whitesmoke;
+}
+
+.hello-rick{
+    position: absolute;
+    font-size: 30px;
+    rotate: -90deg;
+    display: grid;grid-template-columns: repeat(1, 1fr);
+    gap: 50rem;
+    transition: all 0.5s ease-in-out;
+    padding: 150px;
+    height: 100rem;
+}
+
+.ricko{
+    position: sticky;
+}
+
+@media(max-width: 1000px){
+    .hello-world{
+        gap: 300px;
+        padding: 75px;
+    }
+}
+
+.about-me{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px;
+    padding: 20px;
+    text-align: center;
+    transition:  all 0.3s ease-in-out;
+}
+
+@media(max-width: 1000px){
+    .about-me{
+    margin: 20%;
+}
+}
+
+.about-me img{
+    filter: drop-shadow(0 0 5px);
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: inline;
+}
+
+.dark-theme{
+    background-color: black;
+    cursor: crosshair;
+}
+
+.theme-dark{
+    box-shadow: 0 0 5px whitesmoke,
+    0 0 15px whitesmoke
+    ;
+}
+
+.theme-dark img{
+    animation: identifier 2s linear infinite;
+}
+
+@keyframes identifier {
+    0%{
+        rotate: 0;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+
+
+.swerve{
+    background-color: white;
+    border: none;
+    border-radius: 100%;
+    transition: all 0.5s ease-in-out;
+    font-family: "Edu AU VIC WA NT Pre";
+}
+
+.about-me img{
+    display: flex;
+}
